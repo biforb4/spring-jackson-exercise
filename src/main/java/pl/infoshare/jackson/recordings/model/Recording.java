@@ -6,6 +6,7 @@ public interface Recording {
     String getTitle();
     Recording withId(Integer id);
 
+
     default RecordingId getExternalId() {
         return new RecordingId(getId(), getType());
     }
